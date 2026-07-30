@@ -1,0 +1,2489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ── SEO ─────────────────────────────────────────────────── -->
+  <title>Capital Ridge Construction | General Contractor Ottawa & Gatineau</title>
+  <meta name="description" content="Capital Ridge Construction is Ottawa and Gatineau's trusted general contractor. We specialize in residential and commercial construction, renovations, custom home builds, and site work. Licensed, insured, and on budget — every time." />
+  <meta name="keywords" content="general contractor Ottawa, general contractor Gatineau, construction company Ottawa, Ottawa home renovation, Ottawa custom home builder, commercial contractor Ottawa, residential contractor Gatineau, basement renovation Ottawa, Ottawa Gatineau construction, Capital Ridge Construction" />
+  <meta name="robots" content="index, follow" />
+  <meta name="geo.region" content="CA-ON" />
+  <meta name="geo.placename" content="Ottawa, Ontario" />
+
+  <!-- Open Graph (social sharing) -->
+  <meta property="og:title" content="Capital Ridge Construction | General Contractor Ottawa & Gatineau" />
+  <meta property="og:description" content="Ottawa and Gatineau's trusted general contractor for residential, commercial, and renovation projects. Licensed, insured, on time and on budget." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="en_CA" />
+
+  <!-- Local Business Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "GeneralContractor",
+    "name": "Capital Ridge Construction",
+    "description": "General contractor serving Ottawa and Gatineau specializing in residential construction, commercial builds, renovations, custom homes, and site work.",
+    "url": "https://www.capitalridgeconstruction.ca",
+    "telephone": "+1-613-612-8812",
+    "email": "info@capitalridgeconstruction.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "333 Preston Street",
+      "addressLocality": "Ottawa",
+      "addressRegion": "ON",
+      "addressCountry": "CA"
+    },
+    "areaServed": [
+      { "@type": "City", "name": "Ottawa" },
+      { "@type": "City", "name": "Gatineau" }
+    ],
+    "priceRange": "$$",
+    "openingHours": ["Mo-Fr 07:00-18:00", "Sa-Su by appointment"],
+    "hasMap": "https://www.google.com/maps/search/Capital+Ridge+Construction+Ottawa",
+    "sameAs": []
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800;900&family=Barlow+Condensed:wght@600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --black:      #0A0A0A;
+      --black-soft: #1A1A1A;
+      --gray-dark:  #3A3A3A;
+      --gray-mid:   #6B6B6B;
+      --gray-light: #ADADAD;
+      --gray-bg:    #F2F2F2;
+      --white:      #FFFFFF;
+      --border:     #E0E0E0;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Barlow', sans-serif;
+      color: var(--black);
+      background: var(--white);
+      line-height: 1.6;
+    }
+
+    /* ─── NAV ─────────────────────────────────────── */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      padding: 0 16px;
+    }
+
+    /* Inner wrapper — transitions between full-width and pill */
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 80px;
+      padding: 0 5%;
+      background: var(--black);
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+      transition: all 0.35s cubic-bezier(0.4,0,0.2,1);
+    }
+
+    /* Scrolled pill state */
+    nav.scrolled .nav-inner {
+      max-width: 920px;
+      margin: 10px auto 0;
+      height: 56px;
+      padding: 0 28px;
+      background: rgba(10,10,10,0.85);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 100px;
+    }
+
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      text-decoration: none;
+      flex-shrink: 0;
+    }
+
+    .nav-logo-text {
+      font-family: 'Barlow', sans-serif;
+      font-size: 18px;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      color: var(--white);
+      white-space: nowrap;
+      line-height: 1;
+      transition: font-size 0.35s cubic-bezier(0.4,0,0.2,1);
+    }
+
+    nav.scrolled .nav-logo-text { font-size: 15px; }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 36px;
+      list-style: none;
+    }
+
+    .nav-links li {
+      transform-origin: center bottom;
+      transition: transform 0.2s cubic-bezier(0.34,1.56,0.64,1);
+      will-change: transform;
+    }
+
+    .nav-links a {
+      color: rgba(255,255,255,0.7);
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      transition: color 0.2s;
+      display: block;
+    }
+
+    .nav-links a:hover { color: var(--white); }
+
+    .nav-cta {
+      background: var(--white) !important;
+      color: var(--black) !important;
+      padding: 10px 22px;
+      border-radius: 100px;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      transition: background 0.2s !important;
+    }
+
+    .nav-cta:hover { background: var(--gray-bg) !important; }
+
+    /* ─── HERO ────────────────────────────────────── */
+
+    /* Entrance animations (replaces framer-motion) */
+    @keyframes heroFadeUp {
+      from { opacity: 0; filter: blur(12px); transform: translateY(16px); }
+      to   { opacity: 1; filter: blur(0);    transform: translateY(0); }
+    }
+
+    .anim { opacity: 0; animation: heroFadeUp 1s cubic-bezier(0.22,1,0.36,1) forwards; }
+    .anim-1 { animation-delay: 0.1s; }
+    .anim-2 { animation-delay: 0.25s; }
+    .anim-3 { animation-delay: 0.4s; }
+    .anim-4 { animation-delay: 0.55s; }
+    .anim-5 { animation-delay: 0.75s; }
+
+    #hero {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      overflow: hidden;
+      background: #020617;
+      padding-top: 80px;
+    }
+
+    /* Photo fills the hero as background, slowly zooming/panning */
+    #hero-video {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 30%;
+      filter: grayscale(100%) brightness(0.32);
+      z-index: 0;
+      display: block;
+      transform-origin: center 30%;
+      animation: heroKenBurns 24s ease-in-out infinite alternate;
+    }
+
+    @keyframes heroKenBurns {
+      from { transform: scale(1); }
+      to   { transform: scale(1.12); }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      #hero-video { animation: none; }
+    }
+
+    /* Dark overlay over the video */
+    #hero::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 110% 50% at 50% 108%, #020617 0%, transparent 65%),
+        linear-gradient(to bottom, rgba(2,6,23,0.4) 0%, rgba(2,6,23,0.1) 50%, rgba(2,6,23,0.55) 100%);
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    /* Centered content wrapper — above video (z0), overlay (z1), lamp (z2) */
+    .hero-center {
+      position: relative;
+      z-index: 3;
+      width: 100%;
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 80px 24px 0;
+      text-align: center;
+    }
+
+    /* ── Lamp light effect — above video, below content ── */
+    .hero-lamp {
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 70%;
+      z-index: 2;
+      pointer-events: none;
+      overflow: hidden;
+    }
+
+    .lamp-inner {
+      position: absolute;
+      inset: 0;
+      transform: scaleY(1.25);
+      transform-origin: center top;
+    }
+
+    /* Left cone — fades bottom + left edge via mask-image */
+    .lamp-cone-left {
+      position: absolute;
+      top: 0;
+      right: 50%;
+      height: 22rem;
+      width: clamp(20rem, 38vw, 36rem);
+      background: conic-gradient(from 70deg at 100% 0%, rgba(255,255,255,0.40) 0%, transparent 22%);
+      -webkit-mask-image: linear-gradient(to bottom, rgba(255,255,255,0.95) 0%, transparent 80%),
+                          linear-gradient(to right, transparent 0%, rgba(255,255,255,0.95) 30%);
+      mask-image: linear-gradient(to bottom, rgba(255,255,255,0.95) 0%, transparent 80%),
+                  linear-gradient(to right, transparent 0%, rgba(255,255,255,0.95) 30%);
+      -webkit-mask-composite: source-in;
+      mask-composite: intersect;
+      animation: lampConeIn 1s 0.3s ease-out both;
+    }
+
+    /* Right cone — fades bottom + right edge via mask-image */
+    .lamp-cone-right {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      height: 22rem;
+      width: clamp(20rem, 38vw, 36rem);
+      background: conic-gradient(from 290deg at 0% 0%, transparent 78%, rgba(255,255,255,0.40) 100%);
+      -webkit-mask-image: linear-gradient(to bottom, rgba(255,255,255,0.95) 0%, transparent 80%),
+                          linear-gradient(to left, transparent 0%, rgba(255,255,255,0.95) 30%);
+      mask-image: linear-gradient(to bottom, rgba(255,255,255,0.95) 0%, transparent 80%),
+                  linear-gradient(to left, transparent 0%, rgba(255,255,255,0.95) 30%);
+      -webkit-mask-composite: source-in;
+      mask-composite: intersect;
+      animation: lampConeIn 1s 0.3s ease-out both;
+    }
+
+    /* Wide soft orb glow */
+    .lamp-orb {
+      position: absolute;
+      top: 2.5rem;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 28rem;
+      height: 9rem;
+      border-radius: 50%;
+      background: rgba(255,255,255,1);
+      filter: blur(64px);
+      opacity: 0.5;
+      animation: lampOrbIn 1.2s 0.15s ease-out both;
+    }
+
+    /* Tight inner glow */
+    .lamp-glow {
+      position: absolute;
+      top: 0.25rem;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 14rem;
+      height: 9rem;
+      border-radius: 50%;
+      background: rgba(255,255,255,1);
+      filter: blur(30px);
+      animation: lampGlowIn 0.8s 0.3s ease-out both;
+    }
+
+    /* Thin horizontal line */
+    .lamp-line {
+      position: absolute;
+      top: 2px;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 2px;
+      width: 30rem;
+      background: rgba(255,255,255,0.95);
+      border-radius: 2px;
+      animation: lampLineGrow 0.8s 0.3s ease-in-out both;
+    }
+
+    @keyframes lampConeIn {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+    }
+    @keyframes lampOrbIn {
+      from { width: 6rem; opacity: 0; }
+      to   { width: 28rem; opacity: 0.5; }
+    }
+    @keyframes lampGlowIn {
+      from { width: 2rem; opacity: 0; }
+      to   { width: 14rem; opacity: 1; }
+    }
+    @keyframes lampLineGrow {
+      from { width: 4rem; opacity: 0; }
+      to   { width: 30rem; opacity: 1; }
+    }
+
+    /* ── Logo — sitting in the pool of light ─────────── */
+    .hero-logo-wrap {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 32px;
+      perspective: 800px;
+    }
+
+    .hero-logo-img {
+      position: relative;
+      width: 300px;
+      height: auto;
+      /* screen blend dissolves dark bg so only white logo marks remain */
+      mix-blend-mode: screen;
+      filter: brightness(3)
+              drop-shadow(0 -20px 60px rgba(255,255,255,0.7))
+              drop-shadow(0 0 120px rgba(255,255,255,0.35));
+      transition: transform 0.1s ease-out, filter 0.3s ease;
+      will-change: transform;
+      transform-style: preserve-3d;
+      cursor: default;
+      animation: logoDropIn 1s 0.7s cubic-bezier(0.22,1,0.36,1) both;
+    }
+
+    /* Thin white divider below logo */
+    .hero-logo-divider {
+      width: 1px;
+      height: 40px;
+      background: linear-gradient(to bottom, rgba(255,255,255,0.4), transparent);
+      margin: 0 auto 36px;
+    }
+
+    @keyframes logoDropIn {
+      from { opacity: 0; transform: translateY(-24px) scale(0.9); }
+      to   { opacity: 1; transform: translateY(0) scale(1); }
+    }
+
+    /* Badge pill — styled like component's announcement chip */
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.12);
+      color: rgba(255,255,255,0.7);
+      font-size: 13px;
+      font-weight: 500;
+      padding: 6px 6px 6px 18px;
+      border-radius: 100px;
+      margin-bottom: 40px;
+      cursor: default;
+    }
+
+    .hero-badge-arrow {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 28px; height: 28px;
+      background: rgba(255,255,255,0.1);
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    h1 {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: clamp(52px, 8vw, 96px);
+      font-weight: 800;
+      color: var(--white);
+      line-height: 0.92;
+      text-transform: uppercase;
+      letter-spacing: -2px;
+      margin-bottom: 28px;
+    }
+
+    h1 em {
+      font-style: normal;
+      -webkit-text-stroke: 2px rgba(255,255,255,0.5);
+      color: transparent;
+    }
+
+    .hero-sub {
+      font-size: 18px;
+      font-weight: 400;
+      color: rgba(255,255,255,0.5);
+      max-width: 560px;
+      margin: 0 auto 44px;
+      line-height: 1.8;
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: var(--white);
+      color: var(--black);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      padding: 15px 30px;
+      border-radius: 12px;
+      text-decoration: none;
+      transition: background 0.2s, transform 0.2s;
+      white-space: nowrap;
+    }
+
+    .btn-primary:hover { background: var(--gray-bg); transform: translateY(-2px); }
+
+    .btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: transparent;
+      color: rgba(255,255,255,0.7);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      padding: 15px 24px;
+      border-radius: 12px;
+      border: 1px solid rgba(255,255,255,0.15);
+      text-decoration: none;
+      transition: border-color 0.2s, color 0.2s;
+      white-space: nowrap;
+    }
+
+    .btn-secondary:hover { border-color: rgba(255,255,255,0.5); color: var(--white); }
+
+    /* Big image card below buttons — like the app screenshot in the component */
+    .hero-image-card {
+      position: relative;
+      margin: 56px auto 0;
+      max-width: 1100px;
+      width: calc(100% + 48px);
+      margin-left: -24px;
+      border-radius: 16px;
+      overflow: hidden;
+      border: 1px solid rgba(255,255,255,0.1);
+      box-shadow: 0 32px 80px rgba(0,0,0,0.6);
+    }
+
+    .hero-image-card img {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+      display: block;
+      filter: grayscale(100%) brightness(0.7);
+    }
+
+    /* Gradient fade at bottom — matches component's gradient overlay */
+    .hero-image-card::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to bottom, transparent 35%, var(--black) 100%);
+    }
+
+    /* Stats bar below the image card — above canvas */
+    .hero-stats-bar {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      justify-content: center;
+      gap: 60px;
+      padding: 48px 24px 80px;
+      flex-wrap: wrap;
+      position: relative;
+      z-index: 3;
+    }
+
+    .stat-item strong {
+      display: block;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 40px;
+      font-weight: 800;
+      color: var(--white);
+      line-height: 1;
+    }
+
+    .stat-item span {
+      font-size: 11px;
+      font-weight: 600;
+      color: rgba(255,255,255,0.4);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    @media (max-width: 768px) {
+      .hero-center { padding: 48px 20px 0; }
+      .hero-image-card { width: 100%; margin-left: 0; border-radius: 10px; }
+      .hero-stats-bar { gap: 32px; padding: 36px 20px 60px; }
+    }
+
+    /* ─── SECTION BASE ────────────────────────────── */
+    section { padding: 100px 5%; }
+
+    .section-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--gray-mid);
+      margin-bottom: 18px;
+    }
+
+    .section-label::before {
+      content: '';
+      width: 28px;
+      height: 1px;
+      background: var(--gray-mid);
+    }
+
+    h2 {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: clamp(38px, 5vw, 64px);
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: -1px;
+      line-height: 0.95;
+      margin-bottom: 20px;
+    }
+
+    .section-intro {
+      font-size: 17px;
+      color: var(--gray-mid);
+      max-width: 560px;
+      line-height: 1.75;
+    }
+
+    .container { max-width: 1200px; margin: 0 auto; }
+
+    /* ─── INFINITE SLIDER STRIP ──────────────────── */
+    #tagline {
+      background: var(--black);
+      border-top: 1px solid rgba(255,255,255,0.07);
+      border-bottom: 1px solid rgba(255,255,255,0.07);
+      padding: 22px 0;
+      overflow: hidden;
+      position: relative;
+    }
+
+    /* Fade edges like the React component's ProgressiveBlur */
+    #tagline::before,
+    #tagline::after {
+      content: '';
+      position: absolute;
+      top: 0; bottom: 0;
+      width: 120px;
+      z-index: 2;
+      pointer-events: none;
+    }
+    #tagline::before {
+      left: 0;
+      background: linear-gradient(to right, var(--black), transparent);
+    }
+    #tagline::after {
+      right: 0;
+      background: linear-gradient(to left, var(--black), transparent);
+    }
+
+    @keyframes slider-scroll {
+      from { transform: translateX(0); }
+      to   { transform: translateX(-50%); }
+    }
+
+    .slider-track {
+      display: flex;
+      align-items: center;
+      width: max-content;
+      animation: slider-scroll 28s linear infinite;
+      gap: 0;
+    }
+
+    .slider-track:hover { animation-play-state: paused; }
+
+    .slider-item {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      padding: 0 48px;
+      border-right: 1px solid rgba(255,255,255,0.1);
+      white-space: nowrap;
+      cursor: pointer;
+      transition: opacity 0.2s;
+    }
+    .slider-item:hover { opacity: 0.7; }
+
+    .slider-item span {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.4);
+    }
+
+    .slider-item strong {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 14px;
+      font-weight: 800;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.7);
+    }
+
+    .slider-dot {
+      width: 4px;
+      height: 4px;
+      background: rgba(255,255,255,0.2);
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    /* ─── SERVICES ────────────────────────────────── */
+    #services { background: var(--gray-bg); }
+
+    .services-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin-bottom: 56px;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1px;
+      background: var(--border);
+    }
+
+    .service-card {
+      background: var(--white);
+      padding: 44px 36px;
+      transition: background 0.2s;
+      cursor: default;
+    }
+
+    .service-card:hover { background: var(--black); }
+    .service-card:hover h3,
+    .service-card:hover p { color: var(--white); }
+    .service-card:hover .service-num { color: rgba(255,255,255,0.15); }
+
+    .service-num {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 64px;
+      font-weight: 800;
+      color: var(--gray-bg);
+      line-height: 1;
+      margin-bottom: 16px;
+      transition: color 0.2s;
+    }
+
+    .service-card h3 {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 22px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: var(--black);
+      margin-bottom: 12px;
+      transition: color 0.2s;
+    }
+
+    .service-card p {
+      font-size: 15px;
+      color: var(--gray-mid);
+      line-height: 1.7;
+      transition: color 0.2s;
+    }
+
+    /* ─── ABOUT ──────────────────────────────────── */
+    #why { background: var(--white); }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 340px 1fr;
+      gap: 72px;
+      align-items: start;
+      margin-top: 56px;
+    }
+
+    .about-photo {
+      position: relative;
+      align-self: start;
+    }
+
+    .about-photo img {
+      width: 100%;
+      height: 440px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .about-photo-placeholder {
+      width: 100%;
+      height: 440px;
+      background: var(--gray-bg);
+      border: 1px dashed var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--gray-light);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    /* Black corner accent */
+    .about-photo::after {
+      content: '';
+      position: absolute;
+      bottom: -16px;
+      right: -16px;
+      width: 120px;
+      height: 120px;
+      background: var(--black);
+      z-index: -1;
+    }
+
+    .about-bio p {
+      font-size: 16px;
+      color: var(--gray-dark);
+      line-height: 1.85;
+      margin-bottom: 22px;
+    }
+
+    .about-bio p:last-of-type { margin-bottom: 0; }
+
+    .about-signature {
+      margin-top: 36px;
+      padding-top: 28px;
+      border-top: 1px solid var(--border);
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .about-signature-name {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 22px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: var(--black);
+    }
+
+    .about-signature-title {
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: var(--gray-mid);
+    }
+
+    @media (max-width: 1000px) {
+      .about-grid { grid-template-columns: 1fr; gap: 40px; }
+      .about-photo { display: none; }
+    }
+
+    .why-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: center;
+      margin-top: 64px;
+    }
+
+    .why-image {
+      position: relative;
+    }
+
+    .why-image img {
+      width: 100%;
+      height: 520px;
+      object-fit: cover;
+      display: block;
+      filter: grayscale(100%);
+    }
+
+    /* Black corner accent */
+    .why-image::after {
+      content: '';
+      position: absolute;
+      bottom: -16px;
+      right: -16px;
+      width: 120px;
+      height: 120px;
+      background: var(--black);
+      z-index: -1;
+    }
+
+    .why-points {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+    }
+
+    .why-point {
+      display: flex;
+      gap: 24px;
+      padding-bottom: 40px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .why-point:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    .why-point-num {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      color: var(--gray-light);
+      flex-shrink: 0;
+      padding-top: 4px;
+    }
+
+    .why-point h3 {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 22px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: var(--black);
+      margin-bottom: 8px;
+    }
+
+    .why-point p {
+      font-size: 15px;
+      color: var(--gray-mid);
+      line-height: 1.7;
+    }
+
+    /* ─── PROJECTS CAROUSEL ───────────────────────── */
+    #projects { background: var(--black); padding-bottom: 120px; overflow: hidden; }
+
+    #projects .section-label { color: rgba(255,255,255,0.4); }
+    #projects .section-label::before { background: rgba(255,255,255,0.3); }
+    #projects h2 { color: var(--white); }
+    #projects .section-intro { color: rgba(255,255,255,0.45); max-width: 440px; }
+
+    .projects-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin-bottom: 48px;
+      gap: 32px;
+      flex-wrap: wrap;
+    }
+
+    .projects-nav {
+      display: flex;
+      gap: 8px;
+      flex-shrink: 0;
+    }
+
+    .projects-nav-btn {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      border: 1px solid rgba(255,255,255,0.15);
+      background: transparent;
+      color: rgba(255,255,255,0.7);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background 0.2s, color 0.2s, border-color 0.2s;
+    }
+    .projects-nav-btn:hover:not(:disabled) {
+      background: rgba(255,255,255,0.1);
+      color: var(--white);
+      border-color: rgba(255,255,255,0.4);
+    }
+    .projects-nav-btn:disabled { opacity: 0.25; cursor: default; }
+
+    /* Embla viewport */
+    .projects-embla {
+      overflow: hidden;
+      width: 100%;
+    }
+
+    .projects-embla-container {
+      display: flex;
+      gap: 0;
+      user-select: none;
+      -webkit-user-select: none;
+      cursor: grab;
+    }
+    .projects-embla-container:active { cursor: grabbing; }
+
+    .project-slide {
+      flex: 0 0 340px;
+      min-width: 0;
+      padding-left: 20px;
+    }
+    @media (min-width: 1024px) { .project-slide { flex: 0 0 380px; } }
+
+    .project-card {
+      position: relative;
+      overflow: hidden;
+      border-radius: 16px;
+      display: block;
+      text-decoration: none;
+      min-height: 432px;
+    }
+
+    @media (min-width: 768px) {
+      .project-card { aspect-ratio: 5/4; min-height: unset; }
+    }
+    @media (min-width: 1024px) {
+      .project-card { aspect-ratio: 16/9; }
+    }
+
+    .project-card img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: grayscale(100%);
+      transition: transform 0.4s ease, filter 0.4s ease;
+      display: block;
+    }
+
+    .project-card:hover img {
+      transform: scale(1.06);
+      filter: grayscale(30%);
+    }
+
+    .project-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        to top,
+        rgba(0,0,0,0.85) 0%,
+        rgba(0,0,0,0.4) 50%,
+        rgba(0,0,0,0) 100%
+      );
+    }
+
+    .project-overlay-content {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 28px;
+    }
+
+    .project-tag {
+      display: inline-block;
+      border: 1px solid rgba(255,255,255,0.45);
+      color: rgba(255,255,255,0.75);
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      padding: 3px 10px;
+      border-radius: 4px;
+      margin-bottom: 10px;
+      width: fit-content;
+    }
+
+    .project-overlay-content h3 {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 22px;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: var(--white);
+      letter-spacing: 0.5px;
+      margin-bottom: 6px;
+    }
+
+    .project-overlay-content p {
+      font-size: 13px;
+      color: rgba(255,255,255,0.5);
+      margin-bottom: 20px;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    .project-read-more {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 13px;
+      font-weight: 600;
+      color: rgba(255,255,255,0.75);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      transition: gap 0.2s;
+    }
+    .project-card:hover .project-read-more { gap: 12px; }
+
+    /* Dot indicators */
+    .projects-dots {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      margin-top: 32px;
+    }
+
+    .projects-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      border: none;
+      background: rgba(255,255,255,0.2);
+      cursor: pointer;
+      padding: 0;
+      transition: background 0.2s;
+    }
+    .projects-dot.active { background: var(--white); }
+
+    /* ── Multi-photo gallery project card ──────────────── */
+    .project-slide-wide {
+      flex: 0 0 500px;
+    }
+    @media (min-width: 1024px) { .project-slide-wide { flex: 0 0 580px; } }
+
+    .project-card-gallery {
+      cursor: default;
+    }
+
+    .gallery-grid {
+      position: absolute;
+      inset: 0;
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      gap: 3px;
+    }
+
+    .gallery-main {
+      grid-row: 1 / 3;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: grayscale(20%);
+      transition: filter 0.4s ease;
+    }
+
+    .gallery-thumb {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: grayscale(20%);
+      transition: filter 0.4s ease;
+    }
+
+    .gallery-grid-2 {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr;
+    }
+    .gallery-grid-2 img { filter: grayscale(20%); transition: filter 0.4s ease; }
+    .project-card-gallery:hover .gallery-grid-2 img { filter: grayscale(0%); }
+
+    .project-card-gallery:hover .gallery-main,
+    .project-card-gallery:hover .gallery-thumb {
+      filter: grayscale(0%);
+    }
+
+    /* ── Before / After comparison card ────────────────── */
+    .ba-card {
+      position: relative;
+      overflow: hidden;
+      border-radius: 16px;
+      min-height: 432px;
+      user-select: none;
+      -webkit-user-select: none;
+      cursor: ew-resize;
+    }
+    @media (min-width: 768px) { .ba-card { aspect-ratio: 5/4; min-height: unset; } }
+    @media (min-width: 1024px) { .ba-card { aspect-ratio: 16/9; } }
+
+    .ba-card img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      pointer-events: none;
+    }
+    .ba-after  { z-index: 1; }
+    .ba-before { z-index: 2; clip-path: inset(0 50% 0 0); transition: clip-path 0s; }
+
+    .ba-divider {
+      position: absolute;
+      top: 0; bottom: 0;
+      left: 50%;
+      width: 2px;
+      background: rgba(255,255,255,0.9);
+      z-index: 4;
+      transform: translateX(-50%);
+      pointer-events: none;
+    }
+    .ba-handle {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 44px; height: 44px;
+      background: var(--white);
+      border-radius: 50%;
+      z-index: 5;
+      display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 2px 16px rgba(0,0,0,0.5);
+      pointer-events: none;
+    }
+    .ba-handle svg { display: block; }
+
+    .ba-label {
+      position: absolute;
+      top: 16px;
+      padding: 4px 12px;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      background: rgba(0,0,0,0.55);
+      color: rgba(255,255,255,0.9);
+      border-radius: 4px;
+      z-index: 6;
+      pointer-events: none;
+      backdrop-filter: blur(4px);
+    }
+    .ba-label-before { left: 16px; }
+    .ba-label-after  { right: 16px; }
+
+    .ba-overlay-content {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 28px;
+      z-index: 3;
+      background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.3) 45%, transparent 100%);
+      pointer-events: none;
+    }
+    .ba-overlay-content .project-tag { margin-bottom: 10px; }
+    .ba-overlay-content h3 {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 22px;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: var(--white);
+      letter-spacing: 0.5px;
+      margin-bottom: 6px;
+    }
+    .ba-overlay-content p {
+      font-size: 13px;
+      color: rgba(255,255,255,0.5);
+    }
+
+
+    /* ─── CONTACT ─────────────────────────────────── */
+    #contact { background: var(--white); }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.4fr;
+      gap: 80px;
+      align-items: start;
+      margin-top: 60px;
+    }
+
+    .contact-info-label {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--gray-mid);
+      margin-bottom: 32px;
+    }
+
+    .contact-detail {
+      display: flex;
+      gap: 20px;
+      margin-bottom: 28px;
+      align-items: flex-start;
+      padding-bottom: 28px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .contact-detail:last-child { border-bottom: none; margin-bottom: 0; }
+
+    .contact-detail-line {
+      width: 2px;
+      height: 40px;
+      background: var(--black);
+      flex-shrink: 0;
+    }
+
+    .contact-detail strong {
+      display: block;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--gray-mid);
+      margin-bottom: 6px;
+    }
+
+    .contact-detail p {
+      font-size: 16px;
+      font-weight: 500;
+      color: var(--black);
+      line-height: 1.5;
+    }
+
+    .contact-form {
+      border: 1px solid var(--border);
+      padding: 48px;
+    }
+
+    .contact-form h3 {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 28px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: var(--black);
+      margin-bottom: 32px;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    .form-group { margin-bottom: 20px; }
+
+    .form-group label {
+      display: block;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--gray-mid);
+      margin-bottom: 8px;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      background: var(--white);
+      border: 1px solid var(--border);
+      padding: 13px 16px;
+      color: var(--black);
+      font-family: 'Barlow', sans-serif;
+      font-size: 15px;
+      transition: border-color 0.2s;
+      outline: none;
+      border-radius: 0;
+      -webkit-appearance: none;
+    }
+
+    .form-group input::placeholder,
+    .form-group textarea::placeholder {
+      color: var(--gray-light);
+    }
+
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      border-color: var(--black);
+    }
+
+    .form-group textarea { resize: vertical; min-height: 120px; }
+
+    .form-submit {
+      width: 100%;
+      background: var(--black);
+      color: var(--white);
+      font-family: 'Barlow', sans-serif;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      padding: 18px;
+      border: none;
+      cursor: pointer;
+      transition: background 0.2s;
+      border-radius: 0;
+    }
+
+    .form-submit:hover { background: var(--black-soft); }
+
+    /* ─── FOOTER ──────────────────────────────────── */
+    footer {
+      background: var(--black);
+      padding: 64px 5% 32px;
+    }
+
+    .footer-top {
+      display: grid;
+      grid-template-columns: 1.6fr 1fr 1fr 1fr;
+      gap: 48px;
+      padding-bottom: 48px;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      margin-bottom: 32px;
+    }
+
+    .footer-logo img {
+      height: 120px;
+      width: auto;
+      filter: invert(1) brightness(2);
+      margin-bottom: 16px;
+    }
+
+    .footer-brand p {
+      font-size: 14px;
+      line-height: 1.75;
+      color: rgba(255,255,255,0.4);
+      margin-top: 16px;
+    }
+
+    .footer-tagline {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.35);
+      margin-top: 8px;
+      display: block;
+    }
+
+    .footer-col h4 {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: var(--white);
+      margin-bottom: 20px;
+    }
+
+    .footer-col ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .footer-col ul a {
+      color: rgba(255,255,255,0.4);
+      text-decoration: none;
+      font-size: 14px;
+      transition: color 0.2s;
+    }
+
+    .footer-col ul a:hover { color: var(--white); }
+
+    .footer-bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 12px;
+      color: rgba(255,255,255,0.25);
+      flex-wrap: wrap;
+      gap: 12px;
+      letter-spacing: 0.5px;
+    }
+
+    /* ─── RESPONSIVE ──────────────────────────────── */
+    @media (max-width: 1000px) {
+      .services-grid { grid-template-columns: 1fr 1fr; }
+      .why-grid { grid-template-columns: 1fr; }
+      .why-image { display: none; }
+      /* projects carousel: handled by embla */
+      .contact-grid { grid-template-columns: 1fr; gap: 48px; }
+      .footer-top { grid-template-columns: 1fr 1fr; }
+    }
+
+    @media (max-width: 640px) {
+      nav { padding: 0 4%; }
+      .nav-links { display: none; }
+      .services-grid { grid-template-columns: 1fr; }
+      .form-row { grid-template-columns: 1fr; }
+      .footer-top { grid-template-columns: 1fr; }
+      .contact-form { padding: 28px; }
+    }
+    /* ─── SERVICE MODAL ─────────────────────────────── */
+    .modal-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.75);
+      backdrop-filter: blur(6px);
+      -webkit-backdrop-filter: blur(6px);
+      z-index: 999;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.25s ease;
+    }
+    .modal-overlay.open {
+      opacity: 1;
+      pointer-events: all;
+    }
+    .modal-box {
+      background: var(--black-soft);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 16px;
+      padding: 48px;
+      max-width: 520px;
+      width: 100%;
+      position: relative;
+      transform: translateY(20px) scale(0.97);
+      transition: transform 0.28s cubic-bezier(0.22,1,0.36,1);
+    }
+    .modal-overlay.open .modal-box {
+      transform: translateY(0) scale(1);
+    }
+    .modal-close {
+      position: absolute;
+      top: 16px; right: 20px;
+      background: none;
+      border: none;
+      color: rgba(255,255,255,0.4);
+      font-size: 24px;
+      cursor: pointer;
+      line-height: 1;
+      transition: color 0.15s;
+    }
+    .modal-close:hover { color: var(--white); }
+    .modal-icon {
+      font-size: 36px;
+      margin-bottom: 16px;
+    }
+    .modal-title {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 28px;
+      font-weight: 800;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: var(--white);
+      margin-bottom: 12px;
+    }
+    .modal-desc {
+      font-size: 15px;
+      color: rgba(255,255,255,0.6);
+      line-height: 1.7;
+      margin-bottom: 24px;
+    }
+    .modal-cta {
+      display: inline-block;
+      padding: 12px 28px;
+      background: var(--white);
+      color: var(--black);
+      font-family: 'Barlow', sans-serif;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      text-decoration: none;
+      border-radius: 100px;
+      transition: opacity 0.2s;
+    }
+    .modal-cta:hover { opacity: 0.85; }
+
+    /* ─── PROJECT LIGHTBOX ────────────────────────────── */
+    #lightbox-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.93);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      z-index: 1000;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 70px 24px 32px;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.25s ease;
+    }
+    #lightbox-overlay.open {
+      opacity: 1;
+      pointer-events: all;
+    }
+
+    #lightbox-inner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 14px;
+      width: 100%;
+      max-width: 960px;
+    }
+
+    #lightbox-title-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    #lightbox-title {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 22px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--white);
+      white-space: nowrap;
+    }
+
+    #lightbox-counter {
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 2px;
+      color: rgba(255,255,255,0.4);
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+
+    #lightbox-img {
+      width: 100%;
+      max-height: calc(100vh - 200px);
+      object-fit: contain;
+      border-radius: 10px;
+      display: block;
+      transition: opacity 0.2s ease;
+    }
+
+    #lightbox-caption {
+      font-size: 13px;
+      color: rgba(255,255,255,0.4);
+      letter-spacing: 0.5px;
+      text-align: center;
+    }
+
+    /* Arrow buttons — sit left/right of the image */
+    #lightbox-nav {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      margin-top: 4px;
+    }
+
+    #lightbox-close {
+      position: absolute;
+      top: 20px; right: 24px;
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 50%;
+      width: 40px; height: 40px;
+      display: flex; align-items: center; justify-content: center;
+      color: rgba(255,255,255,0.7);
+      cursor: pointer;
+      transition: background 0.2s, color 0.2s;
+    }
+    #lightbox-close:hover { background: rgba(255,255,255,0.15); color: var(--white); }
+
+    #lightbox-prev, #lightbox-next {
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 50%;
+      width: 48px; height: 48px;
+      display: flex; align-items: center; justify-content: center;
+      color: rgba(255,255,255,0.7);
+      cursor: pointer;
+      flex-shrink: 0;
+      transition: background 0.2s, color 0.2s;
+    }
+    #lightbox-prev:hover, #lightbox-next:hover { background: rgba(255,255,255,0.15); color: var(--white); }
+    #lightbox-prev:disabled, #lightbox-next:disabled { opacity: 0.2; cursor: default; pointer-events: none; }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="main-nav">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">
+        <span class="nav-logo-text">Capital Ridge Construction</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#why">About</a></li>
+        <li><a href="#contact" class="nav-cta">Get a Quote</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+
+    <!-- Photo background -->
+    <img id="hero-video" src="addition-1.jpg" alt="Capital Ridge Construction framing a new build addition in Ottawa" />
+
+
+    <!-- Centered content -->
+    <div class="hero-center">
+
+      <!-- Badge pill -->
+      <div class="hero-badge anim anim-1">
+        Ottawa &amp; Gatineau's Trusted General Contractor
+        <span class="hero-badge-arrow">
+          <svg width="12" height="12" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+        </span>
+      </div>
+
+      <!-- Heading -->
+      <h1 class="anim anim-2">Your Vision,<br /><em>Our Foundation.</em></h1>
+
+      <!-- Subtitle -->
+      <p class="hero-sub anim anim-3">
+        Ottawa and Gatineau's go-to general contractor for residential builds, commercial construction, and full-scale renovations. Licensed, insured, on time — every time.
+      </p>
+
+      <!-- Buttons -->
+      <div class="hero-buttons anim anim-4">
+        <div style="background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.12);border-radius:14px;padding:3px;">
+          <a href="#contact" class="btn-primary">
+            Get a Free Quote
+            <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+          </a>
+        </div>
+        <a href="#projects" class="btn-secondary">View Our Work</a>
+      </div>
+
+    </div>
+
+    <!-- Stats bar below the card -->
+    <div class="hero-stats-bar anim anim-5">
+      <div class="stat-item">
+        <strong>5+</strong>
+        <span>Years Serving Ottawa–Gatineau</span>
+      </div>
+      <div class="stat-item">
+        <strong>Free</strong>
+        <span>Estimates &amp; Consultations</span>
+      </div>
+      <div class="stat-item">
+        <strong>100%</strong>
+        <span>Licensed &amp; Insured in Ontario &amp; Quebec</span>
+      </div>
+      <div class="stat-item">
+        <strong>5★</strong>
+        <span>Google Rating</span>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- INFINITE SLIDER STRIP -->
+  <div id="tagline">
+    <div class="slider-track">
+      <!-- Set 1 -->
+      <div class="slider-item" data-modal="residential"><span>Residential</span><div class="slider-dot"></div></div>
+      <div class="slider-item" data-modal="about"><strong>Capital Ridge Construction</strong><div class="slider-dot"></div></div>
+      <div class="slider-item" data-modal="commercial"><span>Commercial Builds</span><div class="slider-dot"></div></div>
+      <div class="slider-item" data-modal="about"><strong>Your Vision, Our Foundation</strong><div class="slider-dot"></div></div>
+      <div class="slider-item" data-modal="renovations"><span>Renovations</span><div class="slider-dot"></div></div>
+      <div class="slider-item" data-modal="licensed"><strong>Licensed &amp; Insured</strong><div class="slider-dot"></div></div>
+      <div class="slider-item" data-modal="general"><span>General Contracting</span><div class="slider-dot"></div></div>
+      <div class="slider-item" data-modal="carpentry"><strong>Custom Carpentry</strong><div class="slider-dot"></div></div>
+      <div class="slider-item" data-modal="civil"><span>Site &amp; Civil Work</span><div class="slider-dot"></div></div>
+      <!-- Set 2 — exact duplicate for seamless loop -->
+      <div class="slider-item" data-modal="residential"><span>Residential</span><div class="slider-dot"></div></div>
+      <div class="slider-item" data-modal="about"><strong>Capital Ridge Construction</strong><div class="slider-dot"></div></div>
+      <div class="slider-item" data-modal="commercial"><span>Commercial Builds</span><div class="slider-dot"></div></div>
+      <div class="slider-item" data-modal="about"><strong>Your Vision, Our Foundation</strong><div class="slider-dot"></div></div>
+      <div class="slider-item" data-modal="renovations"><span>Renovations</span><div class="slider-dot"></div></div>
+      <div class="slider-item" data-modal="licensed"><strong>Licensed &amp; Insured</strong><div class="slider-dot"></div></div>
+      <div class="slider-item" data-modal="general"><span>General Contracting</span><div class="slider-dot"></div></div>
+      <div class="slider-item" data-modal="carpentry"><strong>Custom Carpentry</strong><div class="slider-dot"></div></div>
+      <div class="slider-item" data-modal="civil"><span>Site &amp; Civil Work</span><div class="slider-dot"></div></div>
+    </div>
+  </div>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <div class="container">
+      <div class="services-header">
+        <div>
+          <div class="section-label">What We Do</div>
+          <h2>General Contracting Services in Ottawa &amp; Gatineau</h2>
+        </div>
+        <p class="section-intro">
+          From custom home builds to large commercial projects — Capital Ridge Construction handles every phase of construction across the Ottawa–Gatineau region.
+        </p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-num">01</div>
+          <h3>Residential Construction Ottawa</h3>
+          <p>Custom home builds, additions, and structural work for Ottawa and Gatineau homeowners — quality materials, expert crews, and results that last.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-num">02</div>
+          <h3>Commercial Construction</h3>
+          <p>Office buildings, retail fit-outs, and commercial facilities built to spec, on schedule, and fully compliant with Ottawa and Gatineau building codes.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-num">03</div>
+          <h3>Home Renovations &amp; Remodels</h3>
+          <p>Kitchen renovations, bathroom remodels, basement finishing, and full gut renovations for Ottawa and Gatineau homeowners. No project too big or small.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-num">04</div>
+          <h3>General Contracting</h3>
+          <p>Your single point of contact for the entire project — permits, subcontractor coordination, scheduling, and final inspection in the Ottawa–Gatineau area.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-num">05</div>
+          <h3>Custom Carpentry</h3>
+          <p>Built-in cabinetry, millwork, trim, decks, and custom woodwork crafted by skilled finish carpenters serving Ottawa and Gatineau.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-num">06</div>
+          <h3>Site &amp; Civil Work</h3>
+          <p>Site clearing, grading, foundation work, and civil improvements for residential and commercial properties throughout the National Capital Region.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="why">
+    <div class="container">
+      <div class="section-label">Your Vision. Our Foundation.</div>
+      <h2>Building Smarter.<br />Building Better.</h2>
+      <p class="section-intro" style="margin-top:16px;">
+        Construction expertise backed by over 12 years of real estate and development experience.
+      </p>
+
+      <div class="about-grid">
+        <div class="about-photo" id="about-photo-slot">
+          <img src="matt-shackell.png" alt="Matt Shackell, Founder of Capital Ridge Construction" />
+        </div>
+        <div class="about-bio">
+          <p>My name is Matt Shackell, and I have been involved in commercial real estate and development for over 12 years. Throughout my career, I have worked with countless clients who required reliable contractors for their projects. Time and time again, I found myself referring clients to construction companies — only to hear back that the pricing was far higher than expected, with limited transparency and little flexibility.</p>
+          <p>I understand that construction is not inexpensive. Rising material costs, increased labour expenses, and today's economic environment have all contributed to higher project costs. However, I also believe there is a smarter way to approach construction.</p>
+          <p>That is why I created Capital Ridge Construction.</p>
+          <p>Our advantage comes from our ability to operate efficiently while maintaining a highly skilled and dependable workforce capable of handling projects of any size. By keeping unnecessary overhead low and focusing on strong project management, we are able to deliver exceptional workmanship while providing our clients with competitive pricing.</p>
+          <p>Our goal is simple: complete every project on budget, on schedule, and to the highest standard possible.</p>
+          <p>At Capital Ridge Construction, we pride ourselves on being effective, knowledgeable, hardworking, and transparent. We work closely with our clients from start to finish to ensure every decision is made with value in mind. Our mission is to help you achieve the best possible results while maximizing your investment.</p>
+          <p>Whether it's a commercial build-out, renovation, addition, or custom project, Capital Ridge Construction brings the experience, relationships, and dedication needed to get the job done right.</p>
+          <div class="about-signature">
+            <span class="about-signature-name">Matt Shackell</span>
+            <span class="about-signature-title">Founder, Capital Ridge Construction</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="container">
+      <div class="projects-header">
+        <div>
+          <div class="section-label">Our Work</div>
+          <h2>Recent Projects</h2>
+          <p class="section-intro" style="margin-top:16px;">A sample of completed residential and commercial construction projects across Ottawa and Gatineau.</p>
+        </div>
+        <div class="projects-nav">
+          <button class="projects-nav-btn" id="proj-prev" aria-label="Previous project" disabled>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+          </button>
+          <button class="projects-nav-btn" id="proj-next" aria-label="Next project">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Full-width carousel (overflow visible) -->
+    <div class="projects-embla" id="projects-embla">
+      <div class="projects-embla-container" id="projects-embla-container" style="padding-left: max(24px, calc((100vw - 1200px) / 2 + 24px));">
+
+        <!-- Del Zotto — Before & After -->
+        <div class="project-slide project-slide-wide">
+          <div class="project-card proj-lightbox" style="cursor:pointer;"
+               data-title="2540–2550 Del Zotto"
+               data-photos='["del-zotto-after.jpg","del-zotto-before.jpg"]'
+               data-captions='["After — full repaint complete","Before — original building exterior"]'>
+            <img src="del-zotto-after.jpg" alt="2540-2550 Del Zotto repaint" />
+            <div class="project-overlay"></div>
+            <div class="project-overlay-content">
+              <span class="project-tag">Repaint</span>
+              <h3>2540–2550 Del Zotto</h3>
+              <p>Full exterior repaint of a multi-unit residential building.</p>
+              <div class="project-read-more">View Photos <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Building Addition — 3-photo gallery card -->
+        <div class="project-slide project-slide-wide">
+          <div class="project-card project-card-gallery proj-lightbox" style="cursor:pointer;"
+               data-title="Building Addition"
+               data-photos='["addition-1.jpg","addition-2.jpg","addition-3.jpg","addition-4.jpg"]'
+               data-captions='["Construction progress","Framing and structure","Completed addition","Completed addition — exterior finished"]'>
+            <div class="gallery-grid">
+              <img class="gallery-main" src="addition-1.jpg" alt="Building addition Ottawa - Capital Ridge Construction" />
+              <img class="gallery-thumb" src="addition-2.jpg" alt="Building addition Ottawa - Capital Ridge Construction" />
+              <img class="gallery-thumb" src="addition-3.jpg" alt="Building addition Ottawa - Capital Ridge Construction" />
+            </div>
+            <div class="project-overlay"></div>
+            <div class="project-overlay-content">
+              <span class="project-tag">Addition</span>
+              <h3>Building Addition</h3>
+              <p>Full structural addition — framing, envelope, and finishing integrated seamlessly with the existing building.</p>
+              <div class="project-read-more">View Photos <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Refrigeration System Disassembly -->
+        <div class="project-slide project-slide-wide">
+          <div class="project-card project-card-gallery proj-lightbox" style="cursor:pointer;"
+               data-title="Refrigeration System Disassembly"
+               data-photos='["fridge.jpeg","IMG_9536.jpeg","fridge-1.jpg","fridge-2.jpg"]'
+               data-captions='["Refrigeration system — disassembly in progress","Unit removal and site prep","Component breakdown","Final clearance and cleanup"]'>
+            <div class="gallery-grid">
+              <img class="gallery-main" src="fridge.jpeg" alt="Refrigeration system disassembly - Capital Ridge Construction Ottawa" />
+              <img class="gallery-thumb" src="IMG_9536.jpeg" alt="Refrigeration disassembly Ottawa" />
+              <img class="gallery-thumb" src="fridge-1.jpg" alt="Refrigeration disassembly Ottawa" />
+            </div>
+            <div class="project-overlay"></div>
+            <div class="project-overlay-content">
+              <span class="project-tag">Demolition</span>
+              <h3>Refrigeration System Disassembly</h3>
+              <p>Full disassembly and removal of a commercial refrigeration system — safely stripped, cleared, and site left clean.</p>
+              <div class="project-read-more">View Photos <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 492 Bronson Street — Porch & Steps Rebuild -->
+        <div class="project-slide project-slide-wide">
+          <div class="project-card project-card-gallery proj-lightbox" style="cursor:pointer;"
+               data-title="492 Bronson Street"
+               data-photos='["bronson-after-2.jpg","bronson-after-1.jpg","bronson-after-3.jpg","bronson-before.jpg"]'
+               data-captions='["After — rebuilt front porch and steps","After — new railing and stairs","After — side view","Before — original porch"]'>
+            <div class="gallery-grid">
+              <img class="gallery-main" src="bronson-after-2.jpg" alt="492 Bronson Street porch rebuild - Capital Ridge Construction Ottawa" />
+              <img class="gallery-thumb" src="bronson-after-1.jpg" alt="492 Bronson Street porch rebuild - Capital Ridge Construction Ottawa" />
+              <img class="gallery-thumb" src="bronson-before.jpg" alt="492 Bronson Street porch before rebuild - Capital Ridge Construction Ottawa" />
+            </div>
+            <div class="project-overlay"></div>
+            <div class="project-overlay-content">
+              <span class="project-tag">Porch Rebuild</span>
+              <h3>492 Bronson Street</h3>
+              <p>Full demolition and rebuild of a deteriorated front porch and steps — new framing, decking, and railings.</p>
+              <div class="project-read-more">View Photos <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2042 Fairbanks — Front Steps & Deck Rebuild -->
+        <div class="project-slide project-slide-wide">
+          <div class="project-card project-card-gallery proj-lightbox" style="cursor:pointer;"
+               data-title="2042 Fairbanks"
+               data-photos='["fairbanks-after-1.jpg","fairbanks-after-2.jpg","fairbanks-before.jpg","fairbanks-demo-1.jpg","fairbanks-demo-2.jpg","fairbanks-framing-1.jpg","fairbanks-framing-2.jpg"]'
+               data-captions='["After — new composite steps and railings","After — finished entryway","Before — original stone steps","Demolition — breaking out old concrete and stone","Demolition — foundation exposed","New framing for steps and landing","New framing — completed structure"]'>
+            <div class="gallery-grid">
+              <img class="gallery-main" src="fairbanks-after-1.jpg" alt="2042 Fairbanks front steps and deck rebuild - Capital Ridge Construction Ottawa" />
+              <img class="gallery-thumb" src="fairbanks-after-2.jpg" alt="2042 Fairbanks front steps and deck rebuild - Capital Ridge Construction Ottawa" />
+              <img class="gallery-thumb" src="fairbanks-before.jpg" alt="2042 Fairbanks before steps rebuild - Capital Ridge Construction Ottawa" />
+            </div>
+            <div class="project-overlay"></div>
+            <div class="project-overlay-content">
+              <span class="project-tag">Steps &amp; Deck</span>
+              <h3>2042 Fairbanks</h3>
+              <p>Full demolition and rebuild of failing stone front steps — new footings, framing, and low-maintenance composite decking with railings.</p>
+              <div class="project-read-more">View Photos <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 206 Miners Point Road — Cottage Deck & Stone Steps -->
+        <div class="project-slide project-slide-wide">
+          <div class="project-card project-card-gallery proj-lightbox" style="cursor:pointer;"
+               data-title="206 Miners Point Road"
+               data-photos='["minerspoint-2.jpg","minerspoint-1.jpg"]'
+               data-captions='["New composite deck and entry steps","Natural stone staircase connecting deck to the hillside path"]'>
+            <div class="gallery-grid gallery-grid-2">
+              <img src="minerspoint-2.jpg" alt="206 Miners Point Road cottage deck build - Capital Ridge Construction Ottawa" style="width:100%;height:100%;object-fit:cover;" />
+              <img src="minerspoint-1.jpg" alt="206 Miners Point Road natural stone steps - Capital Ridge Construction Ottawa" style="width:100%;height:100%;object-fit:cover;" />
+            </div>
+            <div class="project-overlay"></div>
+            <div class="project-overlay-content">
+              <span class="project-tag">Deck &amp; Stonework</span>
+              <h3>206 Miners Point Road</h3>
+              <p>Custom composite deck build with a natural stone staircase tying the cottage into the hillside — built to handle the terrain and the elements.</p>
+              <div class="project-read-more">View Photos <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Fence Build -->
+        <div class="project-slide project-slide-wide">
+          <div class="project-card project-card-gallery proj-lightbox" style="cursor:pointer;"
+               data-title="Fence Construction"
+               data-photos='["fence-1.jpg","fence-2.jpg"]'
+               data-captions='["Completed fence installation","Fence build — detail view"]'>
+            <div class="gallery-grid gallery-grid-2">
+              <img src="fence-1.jpg" alt="Fence construction Ottawa - Capital Ridge Construction" style="width:100%;height:100%;object-fit:cover;" />
+              <img src="fence-2.jpg" alt="Fence construction Ottawa - Capital Ridge Construction" style="width:100%;height:100%;object-fit:cover;" />
+            </div>
+            <div class="project-overlay"></div>
+            <div class="project-overlay-content">
+              <span class="project-tag">Fencing</span>
+              <h3>Fence Construction</h3>
+              <p>Custom fence build — quality materials and clean installation from start to finish.</p>
+              <div class="project-read-more">View Photos <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+
+    <!-- Dot indicators -->
+    <div class="projects-dots" id="projects-dots"></div>
+  </section>
+
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-label">Ottawa &amp; Gatineau — Let's Talk</div>
+      <h2>Get a Free Quote From<br />Ottawa's Top Contractor</h2>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <p class="contact-info-label">Reach Capital Ridge Construction</p>
+          <div class="contact-detail">
+            <div class="contact-detail-line"></div>
+            <div>
+              <strong>Phone</strong>
+              <p>(613) 612-8812</p>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <div class="contact-detail-line"></div>
+            <div>
+              <strong>Email</strong>
+              <p>info@capitalridgeconstruction.com</p>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <div class="contact-detail-line"></div>
+            <div>
+              <strong>Office</strong>
+              <p>333 Preston Street<br />Ottawa, ON</p>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <div class="contact-detail-line"></div>
+            <div>
+              <strong>Hours</strong>
+              <p>Mon–Fri: 7:00 AM – 5:00 PM<br />Sat–Sun: By Appointment</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form">
+          <h3>Send Us a Message</h3>
+          <form>
+            <div class="form-row">
+              <div class="form-group">
+                <label>First Name</label>
+                <input type="text" placeholder="John" />
+              </div>
+              <div class="form-group">
+                <label>Last Name</label>
+                <input type="text" placeholder="Smith" />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label>Phone</label>
+                <input type="tel" placeholder="(555) 000-0000" />
+              </div>
+              <div class="form-group">
+                <label>Email</label>
+                <input type="email" placeholder="john@email.com" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Project Type</label>
+              <select>
+                <option value="" disabled selected>Select a service...</option>
+                <option>Residential New Construction</option>
+                <option>Commercial Build</option>
+                <option>Renovation / Remodel</option>
+                <option>Addition</option>
+                <option>Custom Carpentry</option>
+                <option>Site / Civil Work</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Project Details</label>
+              <textarea placeholder="Tell us about your project — scope, timeline, location, budget range..."></textarea>
+            </div>
+            <button type="submit" class="form-submit">Send My Request →</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <img src="logo.png" alt="Capital Ridge Construction"
+                 onerror="this.style.display='none';" />
+          </div>
+          <span class="footer-tagline">Your Vision, Our Foundation</span>
+          <p>Quality craftsmanship and dependable service for residential and commercial construction projects across the region.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#services">Residential</a></li>
+            <li><a href="#services">Commercial</a></li>
+            <li><a href="#services">Renovations</a></li>
+            <li><a href="#services">Additions</a></li>
+            <li><a href="#services">Carpentry</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#why">About Us</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="tel:6136128812">(613) 612-8812</a></li>
+            <li><a href="mailto:info@capitalridgeconstruction.com">info@capitalridge<br />construction.com</a></li>
+            <li><a href="#contact">Get a Quote</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 Capital Ridge Construction. All rights reserved. Serving Ottawa &amp; Gatineau.</span>
+        <span>Licensed · Bonded · Insured · Ontario &amp; Quebec</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- SERVICE MODALS -->
+  <div class="modal-overlay" id="modal-overlay" role="dialog" aria-modal="true">
+    <div class="modal-box" id="modal-box">
+      <button class="modal-close" id="modal-close" aria-label="Close">&#x2715;</button>
+      <div class="modal-icon" id="modal-icon"></div>
+      <div class="modal-title" id="modal-title"></div>
+      <div class="modal-desc" id="modal-desc"></div>
+      <a href="#contact" class="modal-cta" id="modal-cta">Get a Free Quote</a>
+    </div>
+  </div>
+
+  <!-- PROJECT LIGHTBOX -->
+  <div id="lightbox-overlay">
+    <button id="lightbox-close" aria-label="Close">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    <div id="lightbox-inner">
+      <div id="lightbox-title-bar">
+        <span id="lightbox-title"></span>
+        <span id="lightbox-counter"></span>
+      </div>
+      <img id="lightbox-img" src="" alt="" />
+      <p id="lightbox-caption"></p>
+      <div id="lightbox-nav">
+        <button id="lightbox-prev" aria-label="Previous photo">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        </button>
+        <button id="lightbox-next" aria-label="Next photo">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 6 15 12 9 18"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    /* ── Hero logo mouse parallax ───────────────────────── */
+    (function () {
+      const wrap = document.getElementById('hero-logo-wrap');
+      const logo = document.getElementById('hero-logo-img');
+      if (!wrap || !logo) return;
+
+      let targetX = 0, targetY = 0, currentX = 0, currentY = 0;
+      let raf;
+
+      document.addEventListener('mousemove', e => {
+        const cx = window.innerWidth  / 2;
+        const cy = window.innerHeight / 2;
+        // Normalise -1 → 1
+        targetX = (e.clientX - cx) / cx;
+        targetY = (e.clientY - cy) / cy;
+      });
+
+      // Reset smoothly when mouse leaves the window
+      document.addEventListener('mouseleave', () => { targetX = 0; targetY = 0; });
+
+      function tick() {
+        // Lerp toward target for silky spring feel
+        currentX += (targetX - currentX) * 0.07;
+        currentY += (targetY - currentY) * 0.07;
+
+        const rotY =  currentX * 14;   // tilt left/right
+        const rotX = -currentY * 10;   // tilt up/down
+        const tx   = -currentX * 10;   // subtle translate
+        const ty   = -currentY * 8;
+
+        logo.style.transform =
+          `perspective(700px) rotateX(${rotX}deg) rotateY(${rotY}deg) translate(${tx}px,${ty}px)`;
+
+        raf = requestAnimationFrame(tick);
+      }
+      tick();
+    })();
+
+    /* ── Scroll-shrink pill nav ─────────────────────────── */
+    const nav = document.getElementById('main-nav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 60);
+    }, { passive: true });
+
+    /* ── Slider modal data ───────────────────────────────── */
+    const modalData = {
+      residential: {
+        icon: '🏠',
+        title: 'Residential Construction',
+        desc: 'From custom home builds to large-scale residential projects, Capital Ridge Construction handles every detail. We work closely with homeowners to bring their vision to life — on time and on budget.',
+        cta: 'Start Your Project'
+      },
+      commercial: {
+        icon: '🏢',
+        title: 'Commercial Builds',
+        desc: 'We specialize in commercial construction including office buildings, retail spaces, warehouses, and mixed-use developments. Our team manages your project from groundbreaking to ribbon cutting.',
+        cta: 'Request a Commercial Quote'
+      },
+      renovations: {
+        icon: '🔨',
+        title: 'Renovations & Remodels',
+        desc: 'Breathe new life into your existing space. Whether it\'s a full gut renovation or a targeted remodel, we deliver high-quality results with minimal disruption to your home or business.',
+        cta: 'Plan My Renovation'
+      },
+      licensed: {
+        icon: '✅',
+        title: 'Licensed & Insured',
+        desc: 'Capital Ridge Construction is fully licensed, bonded, and insured in all areas we operate. Our credentials protect you, your property, and your investment every step of the way.',
+        cta: 'Learn More About Us'
+      },
+      general: {
+        icon: '🏗️',
+        title: 'General Contracting',
+        desc: 'We serve as your single point of contact for complex projects. Our general contracting services cover full project management, subcontractor coordination, scheduling, and quality control.',
+        cta: 'Talk to a Contractor'
+      },
+      carpentry: {
+        icon: '🪵',
+        title: 'Custom Carpentry',
+        desc: 'Our skilled craftsmen deliver precision custom carpentry — from built-in cabinetry and millwork to staircases and decorative trim. Every piece is built to your exact specifications.',
+        cta: 'Get a Carpentry Quote'
+      },
+      civil: {
+        icon: '🚜',
+        title: 'Site & Civil Work',
+        desc: 'We handle all aspects of site preparation including excavation, grading, drainage, and utility installation. A solid foundation starts with expert civil work — and that\'s what we deliver.',
+        cta: 'Discuss Your Site'
+      },
+      about: {
+        icon: '⚒️',
+        title: 'Capital Ridge Construction',
+        desc: 'Capital Ridge Construction is a trusted name in quality craftsmanship across Ottawa and Gatineau. We build relationships as strong as the structures we create.',
+        cta: 'View Our Work'
+      }
+    };
+
+    const overlay  = document.getElementById('modal-overlay');
+    const icon     = document.getElementById('modal-icon');
+    const title    = document.getElementById('modal-title');
+    const desc     = document.getElementById('modal-desc');
+    const cta      = document.getElementById('modal-cta');
+    const closeBtn = document.getElementById('modal-close');
+
+    function openModal(key) {
+      const d = modalData[key];
+      if (!d) return;
+      icon.textContent  = d.icon;
+      title.textContent = d.title;
+      desc.textContent  = d.desc;
+      cta.textContent   = d.cta;
+      overlay.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal() {
+      overlay.classList.remove('open');
+      document.body.style.overflow = '';
+    }
+
+    document.querySelectorAll('.slider-item[data-modal]').forEach(item => {
+      item.addEventListener('click', () => openModal(item.dataset.modal));
+    });
+
+    closeBtn.addEventListener('click', closeModal);
+    overlay.addEventListener('click', e => { if (e.target === overlay) closeModal(); });
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+
+    /* Close modal CTA scrolls to contact then closes */
+    cta.addEventListener('click', closeModal);
+
+    /* ── Projects carousel ────────────────────────────────── */
+    (function () {
+      const viewport  = document.getElementById('projects-embla');
+      const container = document.getElementById('projects-embla-container');
+      const prevBtn   = document.getElementById('proj-prev');
+      const nextBtn   = document.getElementById('proj-next');
+      const dotsEl    = document.getElementById('projects-dots');
+      const slides    = Array.from(container.querySelectorAll('.project-slide'));
+      const GAP       = 20;
+
+      let current   = 0;
+      let startX    = 0;
+      let startScroll = 0;
+      let dragging  = false;
+
+      // Build dots
+      slides.forEach((_, i) => {
+        const d = document.createElement('button');
+        d.className = 'projects-dot' + (i === 0 ? ' active' : '');
+        d.setAttribute('aria-label', `Go to slide ${i + 1}`);
+        d.addEventListener('click', () => goTo(i));
+        dotsEl.appendChild(d);
+      });
+
+      function getSlideLeft(index) {
+        let left = 0;
+        for (let i = 0; i < index; i++) {
+          left += slides[i].offsetWidth + GAP;
+        }
+        return left;
+      }
+
+      function goTo(index) {
+        current = Math.max(0, Math.min(index, slides.length - 1));
+        viewport.scrollTo({ left: getSlideLeft(current), behavior: 'smooth' });
+        updateUI();
+      }
+
+      function updateUI() {
+        const maxScroll = viewport.scrollWidth - viewport.clientWidth;
+        prevBtn.disabled = current === 0;
+        nextBtn.disabled = current >= slides.length - 1 || viewport.scrollLeft >= maxScroll - 4;
+        dotsEl.querySelectorAll('.projects-dot').forEach((d, i) => {
+          d.classList.toggle('active', i === current);
+        });
+      }
+
+      prevBtn.addEventListener('click', () => goTo(current - 1));
+      nextBtn.addEventListener('click', () => goTo(current + 1));
+
+      // Drag support
+      viewport.addEventListener('mousedown', e => {
+        dragging = true;
+        startX = e.pageX;
+        startScroll = viewport.scrollLeft;
+        viewport.style.scrollBehavior = 'auto';
+      });
+      window.addEventListener('mousemove', e => {
+        if (!dragging) return;
+        viewport.scrollLeft = startScroll - (e.pageX - startX);
+      });
+      window.addEventListener('mouseup', e => {
+        if (!dragging) return;
+        dragging = false;
+        viewport.style.scrollBehavior = '';
+        // Snap to nearest slide
+        const diff = e.pageX - startX;
+        if (Math.abs(diff) > 40) {
+          goTo(diff < 0 ? current + 1 : current - 1);
+        } else {
+          goTo(current);
+        }
+      });
+
+      // Sync dot on scroll
+      viewport.addEventListener('scroll', () => {
+        if (dragging) return;
+        let closest = 0, minDist = Infinity;
+        slides.forEach((_, i) => {
+          const dist = Math.abs(viewport.scrollLeft - getSlideLeft(i));
+          if (dist < minDist) { minDist = dist; closest = i; }
+        });
+        if (closest !== current) { current = closest; updateUI(); }
+      }, { passive: true });
+
+      updateUI();
+    })();
+
+    /* ── Nav dock magnification ───────────────────────────── */
+    (function () {
+      const navLinks = document.querySelector('.nav-links');
+      const items    = Array.from(navLinks.querySelectorAll('li'));
+      const RANGE    = 140;  // px — horizontal influence radius
+
+      // Scale: 1.0 at rest → 1.45 at cursor center
+      function update(mouseX) {
+        items.forEach(li => {
+          const rect   = li.getBoundingClientRect();
+          const centerX = rect.left + rect.width / 2;
+          const dist   = Math.abs(mouseX - centerX);
+          const t      = Math.max(0, 1 - dist / RANGE);
+          // Ease with a power curve for a punchy feel
+          const scale  = 1 + t * t * 0.55;
+          li.style.transform = `scale(${scale})`;
+          li.style.zIndex    = t > 0.1 ? '2' : '1';
+        });
+      }
+
+      function reset() {
+        items.forEach(li => {
+          li.style.transform = 'scale(1)';
+          li.style.zIndex    = '1';
+        });
+      }
+
+      navLinks.addEventListener('mousemove', e => update(e.clientX));
+      navLinks.addEventListener('mouseleave', reset);
+    })();
+
+    /* ── Project Photo Lightbox ─────────────────────────── */
+    (() => {
+      const overlay = document.getElementById('lightbox-overlay');
+      const img     = document.getElementById('lightbox-img');
+      const title   = document.getElementById('lightbox-title');
+      const caption = document.getElementById('lightbox-caption');
+      const counter = document.getElementById('lightbox-counter');
+      const prevBtn = document.getElementById('lightbox-prev');
+      const nextBtn = document.getElementById('lightbox-next');
+
+      let photos = [], captions = [], index = 0;
+
+      function open(card) {
+        photos   = JSON.parse(card.dataset.photos   || '[]');
+        captions = JSON.parse(card.dataset.captions || '[]');
+        title.textContent = card.dataset.title || '';
+        index = 0;
+        show();
+        overlay.classList.add('open');
+        document.body.style.overflow = 'hidden';
+      }
+
+      function close() {
+        overlay.classList.remove('open');
+        document.body.style.overflow = '';
+      }
+
+      function show() {
+        img.style.opacity = '0';
+        img.src = photos[index];
+        img.onload = () => { img.style.opacity = '1'; };
+        caption.textContent = captions[index] || '';
+        counter.textContent = (index + 1) + ' / ' + photos.length;
+        prevBtn.disabled = index === 0;
+        nextBtn.disabled = index === photos.length - 1;
+      }
+
+      function prev() { if (index > 0) { index--; show(); } }
+      function next() { if (index < photos.length - 1) { index++; show(); } }
+
+      // Open on card click
+      document.querySelectorAll('.proj-lightbox').forEach(card => {
+        card.addEventListener('click', () => open(card));
+      });
+
+      // Controls
+      prevBtn.addEventListener('click', e => { e.stopPropagation(); prev(); });
+      nextBtn.addEventListener('click', e => { e.stopPropagation(); next(); });
+      document.getElementById('lightbox-close').addEventListener('click', close);
+      overlay.addEventListener('click', e => { if (e.target === overlay) close(); });
+
+      // Keyboard
+      document.addEventListener('keydown', e => {
+        if (!overlay.classList.contains('open')) return;
+        if (e.key === 'ArrowLeft')  prev();
+        if (e.key === 'ArrowRight') next();
+        if (e.key === 'Escape')     close();
+      });
+    })();
+
+  </script>
+
+</body>
+</html>
+
